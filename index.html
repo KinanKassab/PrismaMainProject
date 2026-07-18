@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BloomShop - Premium Sneakers</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#shop" class="logo">BLOOM<span>SHOP</span></a>
+      <nav class="nav-links">
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="search-bar-container">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" placeholder="Search products...">
+      </div>
+      <div class="nav-actions">
+        <a href="#cart" class="cart-icon-wrapper">
+          <i class="fa-solid fa-shopping-cart"></i>
+          <span class="cart-badge">1</span>
+        </a>
+        <span class="sign-in-btn">Sign In</span>
+        <button class="sign-up-btn">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN DYNAMIC SECTIONS -->
+  <main>
+
+    <!-- SECTION 1: SHOP GRID (Default Home View) -->
+    <section id="shop" class="view">
+      <div class="shop-hero">
+        <h1>Step Into <span>Style</span></h1>
+        <p>Discover our latest collection of premium sneakers — comfort, design, and performance in every pair.</p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <a href="#product">
+            <img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842?q=80&w=687" alt="AirFlex Runner" class="product-card-image">
+          </a>
+          <div class="product-card-info">
+            <h3 class="product-card-title">AirFlex Runner</h3>
+            <p class="product-card-price">$89.00</p>
+            <a href="#cart" class="add-to-cart-btn"><i class="fa-solid fa-shopping-cart"></i> Add to Cart</a>
+          </div>
+        </div>
+
+        <!-- Product 2 (Detail View Active Link) -->
+        <div class="product-card">
+          <a href="#product">
+            <img src="https://images.unsplash.com/photo-1608667508764-33cf0726b13a?q=80&w=880" alt="Urban Street Pro" class="product-card-image">
+          </a>
+          <div class="product-card-info">
+            <h3 class="product-card-title">Urban Street Pro</h3>
+            <p class="product-card-price">$99.00</p>
+            <a href="#cart" class="add-to-cart-btn"><i class="fa-solid fa-shopping-cart"></i> Add to Cart</a>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <a href="#product">
+            <img src="https://images.unsplash.com/photo-1465453869711-7e174808ace9?q=80&w=1176" alt="Classic Court 90s" class="product-card-image">
+          </a>
+          <div class="product-card-info">
+            <h3 class="product-card-title">Classic Court 90s</h3>
+            <p class="product-card-price">$79.00</p>
+            <a href="#cart" class="add-to-cart-btn"><i class="fa-solid fa-shopping-cart"></i> Add to Cart</a>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <a href="#product">
+            <img src="https://images.unsplash.com/photo-1512374382149-233c42b6a83b?q=80&w=735" alt="Volt Edge" class="product-card-image">
+          </a>
+          <div class="product-card-info">
+            <h3 class="product-card-title">Volt Edge</h3>
+            <p class="product-card-price">$119.00</p>
+            <a href="#cart" class="add-to-cart-btn"><i class="fa-solid fa-shopping-cart"></i> Add to Cart</a>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+          <a href="#product">
+            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=1074" alt="Zenith Flow" class="product-card-image">
+          </a>
+          <div class="product-card-info">
+            <h3 class="product-card-title">Zenith Flow</h3>
+            <p class="product-card-price">$129.00</p>
+            <a href="#cart" class="add-to-cart-btn"><i class="fa-solid fa-shopping-cart"></i> Add to Cart</a>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+          <a href="#product">
+            <img src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?q=80&w=1170" alt="Street Vibe Low" class="product-card-image">
+          </a>
+          <div class="product-card-info">
+            <h3 class="product-card-title">Street Vibe Low</h3>
+            <p class="product-card-price">$69.00</p>
+            <a href="#cart" class="add-to-cart-btn"><i class="fa-solid fa-shopping-cart"></i> Add to Cart</a>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card">
+          <a href="#product">
+            <img src="https://images.unsplash.com/photo-1516767254874-281bffac9e9a?q=80&w=1170" alt="Nova Horizon" class="product-card-image">
+          </a>
+          <div class="product-card-info">
+            <h3 class="product-card-title">Nova Horizon</h3>
+            <p class="product-card-price">$109.00</p>
+            <a href="#cart" class="add-to-cart-btn"><i class="fa-solid fa-shopping-cart"></i> Add to Cart</a>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card">
+          <a href="#product">
+            <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=764" alt="Pulse React" class="product-card-image">
+          </a>
+          <div class="product-card-info">
+            <h3 class="product-card-title">Pulse React</h3>
+            <p class="product-card-price">$99.00</p>
+            <a href="#cart" class="add-to-cart-btn"><i class="fa-solid fa-shopping-cart"></i> Add to Cart</a>
+          </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product-card">
+          <a href="#product">
+            <img src="https://images.unsplash.com/photo-1621315271772-28b1f3a5df87?q=80&w=687" alt="Core Street Retro" class="product-card-image">
+          </a>
+          <div class="product-card-info">
+            <h3 class="product-card-title">Core Street Retro</h3>
+            <p class="product-card-price">$85.00</p>
+            <a href="#cart" class="add-to-cart-btn"><i class="fa-solid fa-shopping-cart"></i> Add to Cart</a>
+          </div>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product-card">
+          <a href="#product">
+            <img src="https://images.unsplash.com/photo-1496202703211-aa28e9500c30?q=80&w=1170" alt="AeroFlex Lite" class="product-card-image">
+          </a>
+          <div class="product-card-info">
+            <h3 class="product-card-title">AeroFlex Lite</h3>
+            <p class="product-card-price">$75.00</p>
+            <a href="#cart" class="add-to-cart-btn"><i class="fa-solid fa-shopping-cart"></i> Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: PRODUCT DETAILS VIEW -->
+    <section id="product" class="view">
+      <a href="#shop" class="breadcrumb">
+        <i class="fa-solid fa-arrow-left"></i> Return to Shop
+      </a>
+
+      <div class="product-detail-container">
+        <div class="product-image-frame">
+          <img src="https://images.unsplash.com/photo-1608667508764-33cf0726b13a?q=80&w=880" alt="Urban Street Pro">
+        </div>
+        <div class="product-details-content">
+          <h2>Urban Street Pro</h2>
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(4.8) • 127 reviews</span>
+          </div>
+          <div class="product-detail-price">$99.00</div>
+          <p class="product-detail-desc">Minimalist sneakers for everyday wear. Premium leather with a modern urban look. Hand-made structure with absolute attention to detail.</p>
+
+          <div class="quantity-selector-section">
+            <div class="quantity-label">Quantity</div>
+            <div class="quantity-controls">
+              <button class="quantity-btn">-</button>
+              <span class="quantity-display">1</span>
+              <button class="quantity-btn">+</button>
+            </div>
+          </div>
+
+          <div class="detail-actions">
+            <a href="#cart" class="btn-add-cart">
+              <i class="fa-solid fa-shopping-cart"></i> Add to Cart
+            </a>
+            <a href="#cart" class="btn-buy-now">Buy Now</a>
+          </div>
+
+          <div class="extra-actions">
+            <span><i class="fa-regular fa-heart"></i> Add to Wishlist</span>
+            <span><i class="fa-solid fa-share-nodes"></i> Share</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Badges Bar -->
+      <div class="trust-badges-bar">
+        <div class="badge-item">
+          <div class="badge-icon"><i class="fa-solid fa-truck"></i></div>
+          <div class="badge-text">
+            <h5>Free Shipping</h5>
+            <p>On orders over $50</p>
+          </div>
+        </div>
+        <div class="badge-item">
+          <div class="badge-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="badge-text">
+            <h5>Warranty</h5>
+            <p>1 year guarantee</p>
+          </div>
+        </div>
+        <div class="badge-item">
+          <div class="badge-icon"><i class="fa-solid fa-rotate-left"></i></div>
+          <div class="badge-text">
+            <h5>Easy Returns</h5>
+            <p>30-day return policy</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Related Section -->
+      <div class="related-section">
+        <div class="related-header">
+          <h3>Related Products</h3>
+          <a href="#shop">View All</a>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <a href="#product">
+              <img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842?q=80&w=687" alt="AirFlex Runner" class="product-card-image">
+            </a>
+            <div class="product-card-info">
+              <h3 class="product-card-title">AirFlex Runner</h3>
+              <p class="product-card-price">$89.00</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <a href="#product">
+              <img src="https://images.unsplash.com/photo-1465453869711-7e174808ace9?q=80&w=1176" alt="Classic Court 90s" class="product-card-image">
+            </a>
+            <div class="product-card-info">
+              <h3 class="product-card-title">Classic Court 90s</h3>
+              <p class="product-card-price">$79.00</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <a href="#product">
+              <img src="https://images.unsplash.com/photo-1512374382149-233c42b6a83b?q=80&w=735" alt="Volt Edge" class="product-card-image">
+            </a>
+            <div class="product-card-info">
+              <h3 class="product-card-title">Volt Edge</h3>
+              <p class="product-card-price">$119.00</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <a href="#product">
+              <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=1074" alt="Zenith Flow" class="product-card-image">
+            </a>
+            <div class="product-card-info">
+              <h3 class="product-card-title">Zenith Flow</h3>
+              <p class="product-card-price">$129.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SHOPPING CART VIEW -->
+    <section id="cart" class="view">
+      <a href="#shop" class="breadcrumb">
+        <i class="fa-solid fa-arrow-left"></i> Continue Shopping
+      </a>
+
+      <div class="cart-layout">
+        <div class="cart-left-card">
+          <div class="cart-header-title">
+            <h2>Shopping Cart</h2>
+            <button class="clear-all-btn"><i class="fa-regular fa-trash-can"></i> Clear All</button>
+          </div>
+
+          <div class="cart-item">
+            <img src="https://images.unsplash.com/photo-1512374382149-233c42b6a83b?q=80&w=735" alt="Volt Edge" class="cart-item-img">
+            <div class="cart-item-info">
+              <h4>Volt Edge</h4>
+              <p class="cart-item-price">$119.00 each</p>
+              <div class="quantity-controls">
+                <button class="quantity-btn">-</button>
+                <span class="quantity-display">1</span>
+                <button class="quantity-btn">+</button>
+              </div>
+            </div>
+            <div class="cart-item-actions">
+              <button class="delete-item-btn"><i class="fa-regular fa-trash-can"></i></button>
+              <div class="cart-item-total">$119.00</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-summary-card">
+          <h3>Order Summary</h3>
+          <div class="summary-row">
+            <span>Subtotal (1 item)</span>
+            <span>$119.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Shipping</span>
+            <span class="shipping-free">Free</span>
+          </div>
+          <div class="summary-row">
+            <span>Tax</span>
+            <span>$9.52</span>
+          </div>
+          <div class="total-row">
+            <span>Total</span>
+            <span class="total-price">$128.52</span>
+          </div>
+          <a href="#" class="checkout-btn" onclick="alert('Checking out...')">Proceed to Checkout</a>
+          <div class="summary-security">
+            <span><i class="fa-solid fa-lock"></i> Secure SSL checkout</span>
+            <span><i class="fa-solid fa-rotate-left"></i> Free returns within 30 days</span>
+            <span><i class="fa-solid fa-headset"></i> 24/7 customer support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: CONTACT & FAQ VIEW -->
+    <section id="contact" class="view">
+      <div class="contact-hero">
+        <h1>We'd love to <span>hear from you</span></h1>
+        <p>Have a question, suggestion, or just want to say hello? We're here to help and would love to hear from you.</p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Form -->
+        <div class="contact-form-card">
+          <h3>Send us a message</h3>
+          <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+          <form action="#" onsubmit="event.preventDefault(); alert('Your message has been submitted!');">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 20px;">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="How can we help?" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 25px;">
+              <label for="message">Your Message</label>
+              <textarea id="message" placeholder="Tell us more about your inquiry..." required></textarea>
+            </div>
+            <button type="submit" class="contact-form-btn">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Info cards -->
+        <div class="contact-info-column">
+          <div class="info-box-card">
+            <h4>Contact Information</h4>
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-regular fa-envelope"></i></div>
+              <div class="info-text">
+                <h5>Email Us</h5>
+                <p>support@bloomshop.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="info-text">
+                <h5>Call Us</h5>
+                <p>+1 (555) 123-4567</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info-text">
+                <h5>Visit Us</h5>
+                <p>123 Fashion Street, Style City</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-box-card">
+            <h4>Why Contact Us?</h4>
+            <div class="info-item">
+              <div class="info-icon" style="background-color: #e3fcf7; color: #00b087;"><i class="fa-solid fa-headset"></i></div>
+              <div class="info-text">
+                <h5>24/7 Support</h5>
+                <p>Dedicated assistance team</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Grid -->
+      <div class="faq-section">
+        <h3>Frequently Asked Questions</h3>
+        <p>Find quick answers to common questions about our products.</p>
+        
+        <div class="faq-grid">
+          <div class="faq-card">
+            <h4>What are your shipping policies?</h4>
+            <p>We offer free standard shipping on orders over $50. Standard shipping takes 3-5 business days.</p>
+          </div>
+          <div class="faq-card">
+            <h4>How can I track my order?</h4>
+            <p>Once your order ships, we'll email you a tracking link to follow your shipment.</p>
+          </div>
+          <div class="faq-card">
+            <h4>What is your return policy?</h4>
+            <p>We accept returns within 30 days of purchase. Items must be in original, unused condition.</p>
+          </div>
+          <div class="faq-card">
+            <h4>Do you offer international shipping?</h4>
+            <p>Yes, we ship globally! Rates and shipping speeds vary based on your location.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Still Questions Banner -->
+      <div class="still-questions-banner">
+        <div>
+          <h3>Still have questions?</h3>
+          <p>Can't find what you're looking for? Our customer care team is here to assist.</p>
+        </div>
+        <div class="still-questions-btns">
+          <button class="btn-call" onclick="alert('Initiating phone call...')"><i class="fa-solid fa-phone"></i> Call Us</button>
+          <button class="btn-chat" onclick="alert('Starting live chat...')"><i class="fa-regular fa-comments"></i> Live Chat</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="newsletter-container">
+      <h3>Stay in the loop</h3>
+      <p>Subscribe to our newsletter for exclusive offers, new arrivals, and style inspiration.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <div class="footer-logo">BLOOM<span>SHOP</span></div>
+        <p>Discover unique products that inspire your lifestyle. Quality craftsmanship meets modern design.</p>
+        <div class="contact-details">
+          <p><i class="fa-solid fa-location-dot"></i> 123 Fashion Street, Style City, SC 12345</p>
+          <p><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</p>
+          <p><i class="fa-solid fa-envelope"></i> hello@bloomshop.com</p>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>SHOP</h4>
+          <ul>
+            <li><a href="#shop">All Products</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Featured</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>CUSTOMER CARE</h4>
+          <ul>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>COMPANY</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>LEGAL</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 BloomShop™. Made with <span style="color: #e74c3c;">❤</span> All Rights Reserved. Distributed by Majd ALkatan</p>
+      <div class="footer-legal-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
